@@ -1,0 +1,111 @@
+<html lang="hu">
+
+<head>
+    <title>Weblap készítése</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-image: url(kepek/hatter.jpg);
+            font-family: Tahoma, sans-serif;
+        }
+
+        header {
+            width: 100%;
+        }
+
+        .centred {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 25%;
+            margin-bottom: 25px;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 20px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        td {
+            font-size: 24pt;
+            text-align: center;
+            width: 33%;
+        }
+
+        .content {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section,
+        footer {
+            color: white;
+        }
+
+        a:link {
+            color: white;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: lightcyan;
+        }
+
+        a:hover {
+            color: lightgray;
+        }
+
+        a:active {
+            color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <a href="kezdolap.html"><img src="kepek/iit.jpg" alt="Informatikai Épület" class="centred"></a>
+            <table width="100%">
+                <tr>
+                    <td><a href="adatbazis.html">Adatbázisrendszerek I.</a></td>
+                    <td><a href="programozas.html">Programozás alapjai</a></td>
+                    <td><a href="webtech.html">Webtechnológiák I.</a></td>
+                </tr>
+            </table>
+        </header>
+        <section>
+            <div style="display:inline-flex; width:100%; margin-top: 20px" >
+                <div style="width:80%">
+                    <h1>Webtechnológiák I</h1>
+                    <div> A tárgy előadója, leckekönyvi jegyzője: Agárdi Anita </div>
+                    <div>Kredit: 5 </div>
+                    <p><b>Tartalom</b></p>
+                    <ul>
+                        <li>Hálózati alapfogalmak, protokollok. HTTP protokoll. </li>
+                        <li>HTML űrlapok, objektumok beágyazása HTML-be, XHTML elemek. Űrlap formázás elemei.</li>
+                        <li>JavaScript alapok, jQuery nyelv elemei.</li>
+                        <li>Apache webszerver telepítés, web szerver architektúra.</li>
+                        <li>HP nyelv alapjai: PHP szerver oldali programok fejlesztése.</li>
+                        <li>AJAX alapok.</li>
+                        <li>GWT elemek.</li>
+                    </ul>
+                </div>
+                <div style="width:40%">
+                    <img src="kepek/web.jpg" alt="Webtechnológiák" style="width:100%; margin-top:30px">
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>Palencsár Enikő, YD11NL, 2023</footer>
+</body>
+
+</html>

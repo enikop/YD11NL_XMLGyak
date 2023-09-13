@@ -6,30 +6,90 @@
     <style>
         body {
             background-image: url(kepek/hatter.jpg);
-            color: white;
-            font-family: Tahoma;
-            font-size: 10pt;
+            font-family: Tahoma, sans-serif;
         }
-        section {
+
+        header {
+            width: 100%;
+        }
+
+        .centred {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 25%;
+            margin-bottom: 25px;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 20px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        td{
+            font-size: 24pt;
+            text-align: center;
+            width: 33%;
+        }
+
+        .content {
             display: block;
             margin-left: auto;
             margin-right: auto;
             width: 80%;
-
         }
 
+        table{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section, footer {
+            color: white;
+        }
+
+        a:link {
+            color: white;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: lightcyan;
+        }
+
+        a:hover {
+            color: lightgray;
+        }
+        a:active {
+            color: lightgray;
+        }
     </style>
 </head>
 
 <body>
-    <section>
-        <p style="margin-top: 50px; margin-bottom: 100px"><b>Üdvözlöm a honlapomon!</b></p>
-        <p style="margin-bottom: 200px;">Ezt a weblapot az XML kurzuson készítettem el.</p>
-    
-        <p>Források:</p>
-        <p>W3 schools</p>
-        <p>Miskolci Egyetem IIT tantárgyi leírások</p>
-    </section>
+    <div class="content">
+        <header>
+            <a href="kezdolap.html"><img src="kepek/iit.jpg" alt="Informatikai Épület" class="centred"></a>
+            <table width="100%">
+                <tr>
+                    <td ><a href="adatbazis.html">Adatbázisrendszerek I.</a></td>
+                    <td ><a href="programozas.html">Programozás alapjai</a></td>
+                    <td ><a href="webtech.html">Webtechnológiák I.</a></td>
+                </tr>
+            </table>
+        </header>
+        <section>
+            <p style="margin-top: 60px; margin-bottom: 40px"><b>Üdvözlöm a honlapomon!</b></p>
+            <p style="margin-bottom: 100px;">Ezt a weblapot az XML kurzuson készítettem el.</p>
+
+            <div><b>Forrás:</b></div>
+            <div>W3 schools</div>
+            <div>Miskolci Egyetem IIT tantárgyi leírások</div>
+        </section>
+    </div>
+    <footer>Palencsár Enikő, YD11NL, 2023</footer>
 </body>
 
 </html>

@@ -1,0 +1,112 @@
+<html lang="hu">
+
+<head>
+    <title>Weblap készítése</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-image: url(kepek/hatter.jpg);
+            font-family: Tahoma, sans-serif;
+        }
+
+        header {
+            width: 100%;
+        }
+
+        .centred {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 25%;
+            margin-bottom: 25px;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 20px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        td {
+            font-size: 24pt;
+            text-align: center;
+            width: 33%;
+        }
+
+        .content {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section,
+        footer {
+            color: white;
+        }
+
+        a:link {
+            color: white;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: lightcyan;
+        }
+
+        a:hover {
+            color: lightgray;
+        }
+
+        a:active {
+            color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <a href="kezdolap.html"><img src="kepek/iit.jpg" alt="Informatikai Épület" class="centred"></a>
+            <table width="100%">
+                <tr>
+                    <td><a href="adatbazis.html">Adatbázisrendszerek I.</a></td>
+                    <td><a href="programozas.html">Programozás alapjai</a></td>
+                    <td><a href="webtech.html">Webtechnológiák I.</a></td>
+                </tr>
+            </table>
+        </header>
+        <section>
+            <div style="display:inline-flex; width:100%; margin-top: 20px" >
+                <div style="width:80%">
+                    <h1>Adatbázisrendszerek I</h1>
+                    <div> A tárgy előadója, leckekönyvi jegyzője: Prof. Dr. Kovács László </div>
+                    <div>Kredit: 5 </div>
+                    <p><b>Tartalom</b></p>
+                    <ul>
+                        <li>Adatkezelés és adatbáziskezelés alapfogalmai, fileszervezési módszerek, B-fa index; adatbázis architektúra. </li>
+                        <li>Adatmodellek, SDM modellek áttekintése, ER adatmodell, EER adatmodell.</li>
+                        <li>Hierarchikus adatmodell. Hálós adatmodell áttekintése. Hálós adatmodell műveleti része.</li>
+                        <li>Relációs adatmodell, relációs struktúra és integritási feltételek.</li>
+                        <li>Relációs adatmodell műveleti része, relációs algebra.</li>
+                        <li>Az SQL szabvány relációs kezelő nyelv bemutatása, a DDL, DML és a SELECT utasítások használata.</li>
+                        <li>Az SQL92 szabvány további elemei; Az adatmodellezés problémái, adatbázis fejlesztési módszertanok.</li>
+                        <li>DBMS termékek SQL implementációnak áttekintése. </li>
+                    </ul>
+                </div>
+                <div style="width:40%">
+                    <img src="kepek/db.jpg" alt="Progalap" style="width:100%; margin-top: 30px">
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>Palencsár Enikő, YD11NL, 2023</footer>
+</body>
+
+</html>
