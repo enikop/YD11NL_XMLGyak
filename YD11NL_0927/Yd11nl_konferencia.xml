@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<YD11NL_konferencianaptar>
+    <konferencia>
+        <cim>Környezetünk védelme</cim>
+        <hallgatok>
+            <hallgato>
+                <nev>Kovács Olivér</nev>
+                <lakcim>3521. Miskolc, Fa utca 2.</lakcim>
+            </hallgato>
+            <hallgato>
+                <nev>Nagy Sára</nev>
+                <lakcim>3521. Miskolc, Réz utca 2.</lakcim>
+            </hallgato>
+        </hallgatok>
+        <helyszin>Miskolci Galéria</helyszin>
+        <eloado>
+            <nev>Érdi Éva</nev>
+            <adoszam>12345678</adoszam>
+            <lakcim>1002. Budapest, Csalogány utca 14.</lakcim>
+        </eloado>
+        <datum>2023.09.29.</datum>
+    </konferencia>
+</YD11NL_konferencianaptar>
