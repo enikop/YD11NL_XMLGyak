@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT YD11NL_modell (A+,  B+ , C+,  AB*)>
+
+<!ELEMENT A (b+, c)>
+<!ATTLIST A a ID #REQUIRED>
+<!ELEMENT b (#PCDATA | (x,y))>
+<!ELEMENT x (#PCDATA)>
+<!ELEMENT y (#PCDATA)>
+<!ELEMENT c (#PCDATA | (d,e))>
+<!ELEMENT d (#PCDATA)>
+<!ELEMENT e (#PCDATA)>
+
+<!ELEMENT B (b)>
+<!ATTLIST B 
+        a ID #REQUIRED
+        c IDREF #REQUIRED>
+
+<!ELEMENT C (b)>
+<!ATTLIST C a ID #REQUIRED>
+
+<!ELEMENT AB (c)>
+<!ATTLIST AB 
+        aref IDREF #REQUIRED
+        bref IDREF #REQUIRED>
