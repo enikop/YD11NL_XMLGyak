@@ -69,16 +69,16 @@
 			<xs:sequence>
 				<xs:element name="kurzus" maxOccurs="unbounded">
 					<xs:complexType>
-						<xs:all>
+						<xs:sequence>
 							<xs:element name="kurzusnev" type="xs:string" />
 							<xs:element name="kredit" type="kreditTipus" />
 							<xs:element name="hely" type="xs:string" />
-							<xs:element name="idopont" type="xs:string" />
-							<xs:element name="oktato" type="xs:string" />
-							<xs:element name="oraado" type="xs:string" minOccurs="0" />
-						</xs:all>
+							<xs:element name="idopont" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+							<xs:element name="oktato" type="xs:string" minOccurs="0" maxOccurs="1"/>
+							<xs:element name="oraado" type="xs:string" minOccurs="0" maxOccurs="1"/>
+						</xs:sequence>
 						<xs:attribute name="id" type="idTipus" use="required" />
-						<xs:attribute name="jovahagyas" type="igenNemTipus" use="optional" />
+						<xs:attribute name="jovahagyas" type="igenNemTipus" use="optional" default="nem"/>
 						<xs:attribute name="nyelv" type="xs:string" use="optional" />
 					</xs:complexType>
 				</xs:element>
