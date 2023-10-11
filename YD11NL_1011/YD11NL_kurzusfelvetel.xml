@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<YD11NL_kurzusfelvetel tanev="2023/24_I" egyetem="ME" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+<YD11NL_kurzusfelvetel tanev="2023/2024/I" egyetem="ME" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
 xs:noNamespaceSchemaLocation="YD11NL_kurzusfelvetel.xsd">
     <hallgato>
         <hnev>Palencsár Enikő</hnev>
