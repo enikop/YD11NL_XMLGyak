@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+     <!--tanev, egyetem, id, jovahagyas tipus-->
+     <xs:simpleType name="tanevTipus">
+        <xs:restriction base="xs:string">
+
+        </xs:restriction>
+     </xs:simpleType>
+     <xs:simpleType name="egyetemTipus">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="ME"/>
+        </xs:restriction>
+     </xs:simpleType>
+     <xs:simpleType name="idTipus">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="5"/>
+            <xs:maxLength value="10"/>
+        </xs:restriction>
+     </xs:simpleType>
+    <xs:element name="hallgato" type="hallgatoTipus" />
+    <xs:element name="kurzusok">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="kurzus" type="kurzusTipus" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="YD11NL_kurzusfelvetel">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="hallgato" />
+                <xs:element ref="kurzusok"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="hallgatoTipus">
+        <xs:sequence>
+            <xs:element name="hnev" type="xs:string" />
+            <xs:element name="szulev" type="xs:string" />
+            <xs:element name="szak" type="szakTipus" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="kurzusTipus">
+        <xs:sequence>
+            <xs:element name="kurzusnev" type="xs:string" />
+            <xs:element name="kredit" type="xs:int" />
+            <xs:element name="hely" type="xs:string" />
+            <xs:element name="idopont" type="xs:string" />
+            <xs:element name="oktato" type="xs:string" />
+            <xs:element name="oraado" type="xs:string" minOccurs="0" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="szakTipus">
+        <xs:sequence>
+            
+        </xs:sequence>
+        <xs:attribute name="evf" type="xs:int"/>
+    </xs:complexType>
+</xs:schema>

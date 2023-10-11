@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<YD11NL_kurzusfelvetel tanev="2023/24_I" egyetem="ME" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+xs:noNamespaceSchemaLocation="YD11NL_kurzusfelvetel.xsd">
+    <hallgato>
+        <hnev>Palencsár Enikő</hnev>
+        <szulev>2001</szulev>
+        <szak evf="5">mérnökinformatikus BSc</szak>
+    </hallgato>
+    <kurzusok>
+        <kurzus id="GEIAL31H-B">
+			<kurzusnev>Szoftvertesztelés</kurzusnev>
+			<kredit>5</kredit>
+			<hely>Inf. 103</hely>
+			<idopont>Hétfő 10:00-14:00</idopont>
+			<oktato>Dr. Hornyák Olivér</oktato>	
+		</kurzus>
+        <kurzus id="GEIAL331-B">
+			<kurzusnev>Webtechnológiák I.</kurzusnev>
+			<kredit>5</kredit>
+			<hely>XXX. előadó</hely>
+			<idopont>Hétfő 14:00-18:00</idopont>
+			<oktato>Agárdi Anita</oktato>	
+		</kurzus>
+        <kurzus id="GEIAL130-B" jovahagyas="igen">
+			<kurzusnev>Mesterséges intelligencia alapok</kurzusnev>
+			<kredit>5</kredit>
+			<hely>XXXII. előadó</hely>
+			<idopont>Kedd 10:00-12:00</idopont>
+			<oktato>Kunné Dr. Tamás Judit</oktato>	
+            <oraado>Fazekas Levente</oraado>	
+		</kurzus>
+		<kurzus id="GEIAL322-B">
+			<kurzusnev>Adatkezelés XML-ben</kurzusnev>
+			<kredit>5</kredit>
+			<hely>XXXII. előadó</hely>
+			<idopont>Kedd 12:00-14:00</idopont>
+			<oktato>Dr. Bednarik László</oktato>		
+		</kurzus>
+        <kurzus id="GEIAL333-B" jovahagyas="igen">
+			<kurzusnev>Web-es alkalmazások (Java)</kurzusnev>
+			<kredit>5</kredit>
+			<hely>online</hely>
+			<idopont>Kedd 14:00-18:00</idopont>
+			<oktato>Dr. Barabás Péter</oktato>	
+			<oraado>Selmeci Viktor</oraado>
+		</kurzus>  
+        <kurzus id="GEIAL120-B" jovahagyas="nem" nyelv="angol">
+			<kurzusnev>Integrált vállalati rendszerek</kurzusnev>
+			<kredit>5</kredit>
+			<hely>X. előadó</hely>
+			<idopont>Szerda 12:00-16:00</idopont>
+			<oktato>Dr. Samad Dadvandipour</oktato>	
+            <oraado>Dr. Kulcsárné Dr. Forrai Mónika</oraado>
+		</kurzus>
+    </kurzusok>
+
+</YD11NL_kurzusfelvetel>
