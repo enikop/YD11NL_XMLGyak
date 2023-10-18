@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Fesztivál_YD11NL xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+ xs:noNamespaceSchemaLocation="XMLSchemayd11nl.xsd">
+    <fesztivál feszkód="1">
+        <név>Sziget Fesztivál</név>
+        <helyszín>Budapest, Margit-sziget</helyszín>
+        <év>2022</év>
+    </fesztivál>
+    <fesztivál feszkód="2">
+        <név>Kocsonyafesztivál</név>
+        <helyszín>Miskolc</helyszín>
+        <év>2023</év>
+    </fesztivál>
+
+    <tulajdonos tkód="11" fesztivál="1">
+        <név>Sziget Kulturális Szervezőiroda</név>
+        <adószám>14657387-4-32</adószám>
+        <alapítás>1993</alapítás>
+        <bevétel>65134000</bevétel>
+    </tulajdonos>
+    <tulajdonos tkód="12" fesztivál="2">
+        <név>Miskolc Város Önkormányzata</név>
+        <adószám>18765498-5-25</adószám>
+        <alapítás>2000</alapítás>
+        <bevétel>435600</bevétel>
+    </tulajdonos>
+
+    <fellépő felkód="21" fesztivál="2">
+        <név>Alma együttes</név>
+        <ország>Magyarország</ország>
+        <díj>50000</díj>
+    </fellépő>
+    <fellépő felkód="22" fesztivál="1">
+        <név>Stromae</név>
+        <ország>Franciaország</ország>
+        <díj>760000</díj>
+    </fellépő>
+
+    <bár bkód="100" fesztivál="1">
+        <név>Tokaji Sátor</név>
+        <ital>tokaji aszú</ital>
+        <ital>gyöngyözőbor</ital>
+        <ital>borsodi sör</ital>
+        <cég>Tokaj Hegyalja kft.</cég>
+    </bár>
+    <bár bkód="101" fesztivál="2">
+        <név>Fröccsműhely</név>
+        <ital>szódavíz</ital>
+        <ital>kisfröccs</ital>
+        <ital>házmester</ital>
+        <ital>műhely fehérbor</ital>
+        <cég>Kovács és fia kft.</cég>
+    </bár>
+
+    <alkalmazott akód="1001" munkahely="100">
+        <név>Kiss Angéla</név>
+        <muszak>8-14</muszak>
+        <muszak>18-20</muszak>
+        <fizetés>30000</fizetés>
+    </alkalmazott>
+    <alkalmazott akód="1002" munkahely="100">
+        <név>Kovács Béla</név>
+        <muszak>14-16</muszak>
+        <fizetés>30000</fizetés>
+    </alkalmazott>
+
+    <résztvevő rkód="9001" fesztivál="2">
+        <név>Gerőcs Gergő</név>
+        <diákigazolvány>71615467894</diákigazolvány>
+        <lakcím>
+            <település>Miskolc</település>
+            <utca>Széchenyi</utca>
+            <házszám>1</házszám>
+        </lakcím>
+    </résztvevő>
+    <résztvevő rkód="9002" fesztivál="2">
+        <név>Kamarás Erik</név>
+        <lakcím>
+            <település>Szeged</település>
+            <utca>Napfény</utca>
+            <házszám>23</házszám>
+        </lakcím>
+    </résztvevő>
+
+    <nyelvtudás nykód="2001">
+        <nyelv>angol</nyelv>
+        <szint>B2</szint>
+    </nyelvtudás>
+    <nyelvtudás nykód="2002">
+        <nyelv>német</nyelv>
+        <szint>C1</szint>
+    </nyelvtudás>
+
+    <közvélemény kkód="1" megkérdezett="9002" nyelvtudás="2001">
+        <kérdező>Forgács Beatrix</kérdező>
+    </közvélemény>
+    <közvélemény kkód="2" megkérdezett="9002" nyelvtudás="2002">
+        <kérdező>Forgács Beatrix</kérdező>
+    </közvélemény>
+    <közvélemény kkód="3" megkérdezett="9001" nyelvtudás="2001">
+        <kérdező>Fülöp Tódor</kérdező>
+    </közvélemény>
+
+</Fesztivál_YD11NL>
