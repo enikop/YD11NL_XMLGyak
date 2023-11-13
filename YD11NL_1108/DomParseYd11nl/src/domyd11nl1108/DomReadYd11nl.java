@@ -9,8 +9,10 @@ import javax.xml.parsers.ParserConfigurationException;
 import org.xml.sax.SAXException;
 
 import org.w3c.dom.Document;
+import org.w3c.dom.DocumentType;
 import org.w3c.dom.Element;
 import org.w3c.dom.NamedNodeMap;
+import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 public class DomReadYd11nl {
@@ -30,7 +32,9 @@ public class DomReadYd11nl {
 	public static void printDocument(Document document) {
 		String indentStr = "   ";
 		int indent = 0;
+		System.out.println("<?xml version=\""+document.getXmlVersion()+"\" encoding=\""+document.getXmlEncoding()+"\" ?>");
 		Element root = document.getDocumentElement();
+		NodeList nodes = root.getChildNodes();
 		System.out.println("<"+root.getNodeName()+">");
 		indent++;
 		NodeList lessons = root.getElementsByTagName("ora");
