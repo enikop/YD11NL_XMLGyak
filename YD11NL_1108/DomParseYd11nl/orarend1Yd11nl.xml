@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?><YD11NL_orarend xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="YD11NL_orarend.xsd">
- 
- 	<!--Órarendem-->
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<YD11NL_orarend xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="YD11NL_orarend.xsd">
+    <!--Órarendem-->
     <ora id="1" tipus="előadás">
         <targy>Szoftvertesztelés</targy>
         <idopont>
