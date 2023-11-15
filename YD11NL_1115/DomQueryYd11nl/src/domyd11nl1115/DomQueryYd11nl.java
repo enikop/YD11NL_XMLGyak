@@ -57,7 +57,9 @@ public class DomQueryYd11nl {
 				Node course = courses.item(i);
 				NodeList names = ((Element)course).getElementsByTagName("targy");
 				for(int j=0; j<names.getLength(); j++) {
-					courseNames.add(names.item(j).getTextContent());
+					if(!courseNames.contains(names.item(j).getTextContent())) {
+						courseNames.add(names.item(j).getTextContent());
+					}
 				}
 			}
 			return courseNames;
@@ -74,9 +76,9 @@ public class DomQueryYd11nl {
 			NodeList courses = root.getElementsByTagName("ora");
 			for(int i=0; i<courses.getLength(); i++) {
 				Node course = courses.item(i);
-				NodeList names = ((Element)course).getElementsByTagName("oktato");
-				for(int j=0; j<names.getLength(); j++) {
-					teacherNames.add(names.item(j).getTextContent());
+				Node name = ((Element)course).getElementsByTagName("oktato").item(0);
+				if(!teacherNames.contains(name.getTextContent())) {
+					teacherNames.add(name.getTextContent());
 				}
 			}
 			return teacherNames;
@@ -88,9 +90,9 @@ public class DomQueryYd11nl {
 			for(int i=0; i<courses.getLength(); i++) {
 				Node course = courses.item(i);
 				Node time = ((Element)course).getElementsByTagName("idopont").item(0);
-				Element day = (Element)((Element)course).getElementsByTagName("nap").item(0);
-				Element from = (Element)((Element)course).getElementsByTagName("tol").item(0);
-				Element to = (Element) ((Element)course).getElementsByTagName("ig").item(0);
+				Element day = (Element)((Element)time).getElementsByTagName("nap").item(0);
+				Element from = (Element)((Element)time).getElementsByTagName("tol").item(0);
+				Element to = (Element) ((Element)time).getElementsByTagName("ig").item(0);
 				times.add(day.getTextContent()+" "+from.getTextContent()+"-"+to.getTextContent());
 			}
 			return times;

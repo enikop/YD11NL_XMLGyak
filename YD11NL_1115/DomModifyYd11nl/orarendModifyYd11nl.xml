@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<YD11NL_orarend >
- 	<!--Órarendem-->
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<YD11NL_orarend>
+    <!--Órarendem-->
     <ora id="1" tipus="előadás">
         <targy>Szoftvertesztelés</targy>
         <idopont>
@@ -11,6 +11,7 @@
         <helyszin>Inf. 103</helyszin>
         <oktato>Dr. Hornyák Olivér</oktato>
         <szak>G3BIW</szak>
+        <oraado>Óraadó Anna</oraado>
     </ora>
     <ora id="2" tipus="gyakorlat">
         <targy>Szoftvertesztelés</targy>
