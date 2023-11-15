@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ora id="1" tipus="előadás">
+   <targy>Szoftvertesztelés</targy>
+   <idopont>
+      <nap>hétfő</nap>
+      <tol>10</tol>
+      <ig>12</ig>
+   </idopont>
+   <helyszin>Inf. 103</helyszin>
+   <oktato>Dr. Hornyák Olivér</oktato>
+   <szak>G3BIW</szak>
+</ora>

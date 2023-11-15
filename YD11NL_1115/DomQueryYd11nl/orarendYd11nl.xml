@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<YD11NL_orarend xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+ xs:noNamespaceSchemaLocation="YD11NL_orarend.xsd">
+ 	<!--Órarendem-->
+    <ora id="1" tipus="előadás">
+        <targy>Szoftvertesztelés</targy>
+        <idopont>
+            <nap>hétfő</nap>
+            <tol>10</tol>
+            <ig>12</ig>
+        </idopont>
+        <helyszin>Inf. 103</helyszin>
+        <oktato>Dr. Hornyák Olivér</oktato>
+        <szak>G3BIW</szak>
+    </ora>
+    <ora id="2" tipus="gyakorlat">
+        <targy>Szoftvertesztelés</targy>
+        <idopont>
+            <nap>hétfő</nap>
+            <tol>12</tol>
+            <ig>14</ig>
+        </idopont>
+        <helyszin>Inf. 103</helyszin>
+        <oktato>Dr. Hornyák Olivér</oktato>
+        <szak>G3BIW</szak>
+    </ora>
+    <ora id="3" tipus="előadás">
+        <targy>Web technológiák 1</targy>
+        <idopont>
+            <nap>hétfő</nap>
+            <tol>14</tol>
+            <ig>16</ig>
+        </idopont>
+        <helyszin>XXX. előadó</helyszin>
+        <oktato>Agárdi Anita</oktato>
+        <szak>G3BIW</szak>
+    </ora>
+    <ora id="4" tipus="gyakorlat">
+        <targy>Web technológiák 1</targy>
+        <idopont>
+            <nap>hétfő</nap>
+            <tol>16</tol>
+            <ig>18</ig>
+        </idopont>
+        <helyszin>Inf. 202</helyszin>
+        <oktato>Agárdi Anita</oktato>
+        <szak>G3BIW</szak>
+    </ora>
+    <ora id="5" tipus="előadás">
+        <targy>Mesterséges intelligencia</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>10</tol>
+            <ig>12</ig>
+        </idopont>
+        <helyszin>XXXII. előadó</helyszin>
+        <oktato>Kunné Dr. Tamás Judit</oktato>
+        <szak>G3BIW</szak>
+    </ora>
+    <ora id="6" tipus="előadás">
+        <targy>Adatkezelés XML-ben</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>12</tol>
+            <ig>14</ig>
+        </idopont>
+        <helyszin>XXXII. előadó</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>G3BIW</szak>
+    </ora>
+    <ora id="7" tipus="előadás">
+        <targy>Webes alkalmazások (Java)</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>14</tol>
+            <ig>16</ig>
+        </idopont>
+        <helyszin>online</helyszin>
+        <oktato>Selmeci Viktor</oktato>
+        <szak>G3BIW</szak>
+    </ora>
+    <ora id="8" tipus="gyakorlat">
+        <targy>Webes alkalmazások (Java)</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>16</tol>
+            <ig>18</ig>
+        </idopont>
+        <helyszin>online</helyszin>
+        <oktato>Selmeci Viktor</oktato>
+        <szak>G3BIW</szak>
+    </ora>
+    <ora id="9" tipus="gyakorlat">
+        <targy>Adatkezelés XML-ben</targy>
+        <idopont>
+            <nap>szerda</nap>
+            <tol>10</tol>
+            <ig>12</ig>
+        </idopont>
+        <helyszin>Inf. 101</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>G3BIW</szak>
+    </ora>
+    <ora id="10" tipus="előadás">
+        <targy>Integrált vállalati rendszerek</targy>
+        <idopont>
+            <nap>szerda</nap>
+            <tol>12</tol>
+            <ig>14</ig>
+        </idopont>
+        <helyszin>X. előadó</helyszin>
+        <oktato>Dr. Samad Dadvandipour</oktato>
+        <szak>G3BIW</szak>
+    </ora>
+    <ora id="11" tipus="gyakorlat">
+        <targy>Integrált vállalati rendszerek</targy>
+        <idopont>
+            <nap>szerda</nap>
+            <tol>14</tol>
+            <ig>16</ig>
+        </idopont>
+        <helyszin>Inf. 15</helyszin>
+        <oktato>Kulcsárné Dr. Forrai Mónika</oktato>
+        <szak>G3BIW</szak>
+    </ora>
+    <ora id="12" tipus="gyakorlat">
+        <targy>Mesterséges intelligencia</targy>
+        <idopont>
+            <nap>csütörtök</nap>
+            <tol>10</tol>
+            <ig>12</ig>
+        </idopont>
+        <helyszin>I. előadó</helyszin>
+        <oktato>Fazekas Levente</oktato>
+        <szak>G3BIW</szak>
+    </ora>
+</YD11NL_orarend>
