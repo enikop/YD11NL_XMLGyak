@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <body>
+        <h2>Palencsár Enikő Órarend – 2023/24. I. félév.</h2>
+        <table border="4">
+            <tr bgcolor="#90EE90">
+                <th>ID</th>
+                <th>Tipus</th>
+                <th>Targy</th>
+                <th colspan="2">Idopont</th>
+                <th>Helyszin</th>
+                <th>Oktato</th>
+                <th>Szak</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>előadás</td>
+                <td>Szoftvertesztelés</td>
+                <td>hétfő</td>
+                <td>10h - 12h</td>
+                <td>Inf. 103</td>
+                <td>Dr. Hornyák Olivér</td>
+                <td>G3BIW</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>gyakorlat</td>
+                <td>Szoftvertesztelés</td>
+                <td>hétfő</td>
+                <td>12h - 14h</td>
+                <td>Inf. 103</td>
+                <td>Dr. Hornyák Olivér</td>
+                <td>G3BIW</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>előadás</td>
+                <td>Web technológiák 1</td>
+                <td>hétfő</td>
+                <td>14h - 16h</td>
+                <td>XXX. előadó</td>
+                <td>Agárdi Anita</td>
+                <td>G3BIW</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>gyakorlat</td>
+                <td>Web technológiák 1</td>
+                <td>hétfő</td>
+                <td>16h - 18h</td>
+                <td>Inf. 202</td>
+                <td>Agárdi Anita</td>
+                <td>G3BIW</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>előadás</td>
+                <td>Mesterséges intelligencia</td>
+                <td>kedd</td>
+                <td>10h - 12h</td>
+                <td>XXXII. előadó</td>
+                <td>Kunné Dr. Tamás Judit</td>
+                <td>G3BIW</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>előadás</td>
+                <td>Adatkezelés XML-ben</td>
+                <td>kedd</td>
+                <td>12h - 14h</td>
+                <td>XXXII. előadó</td>
+                <td>Dr. Bednarik László</td>
+                <td>G3BIW</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>előadás</td>
+                <td>Webes alkalmazások (Java)</td>
+                <td>kedd</td>
+                <td>14h - 16h</td>
+                <td>online</td>
+                <td>Selmeci Viktor</td>
+                <td>G3BIW</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>gyakorlat</td>
+                <td>Webes alkalmazások (Java)</td>
+                <td>kedd</td>
+                <td>16h - 18h</td>
+                <td>online</td>
+                <td>Selmeci Viktor</td>
+                <td>G3BIW</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>gyakorlat</td>
+                <td>Adatkezelés XML-ben</td>
+                <td>szerda</td>
+                <td>10h - 12h</td>
+                <td>Inf. 101</td>
+                <td>Dr. Bednarik László</td>
+                <td>G3BIW</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>előadás</td>
+                <td>Integrált vállalati rendszerek</td>
+                <td>szerda</td>
+                <td>12h - 14h</td>
+                <td>X. előadó</td>
+                <td>Dr. Samad Dadvandipour</td>
+                <td>G3BIW</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>gyakorlat</td>
+                <td>Integrált vállalati rendszerek</td>
+                <td>szerda</td>
+                <td>14h - 16h</td>
+                <td>Inf. 15</td>
+                <td>Kulcsárné Dr. Forrai Mónika</td>
+                <td>G3BIW</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>gyakorlat</td>
+                <td>Mesterséges intelligencia</td>
+                <td>csütörtök</td>
+                <td>10h - 12h</td>
+                <td>I. előadó</td>
+                <td>Fazekas Levente</td>
+                <td>G3BIW</td>
+            </tr>
+        </table>
+    </body>
+</html>

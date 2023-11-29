@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hallgatoYD11NL.xsl"?>
+<class>
+    <student id="01">
+        <vezeteknev>Palencsár</vezeteknev>
+        <keresztnev>Enikő</keresztnev>
+        <becenev>Eni</becenev>
+        <kor>22</kor>
+        <osztondij>45000</osztondij>
+    </student>
+    <student id="02">
+        <vezeteknev>Nagy</vezeteknev>
+        <keresztnev>Lajos</keresztnev>
+        <becenev>Lali</becenev>
+        <kor>19</kor>
+        <osztondij>30000</osztondij>
+    </student>
+    <student id="03">
+        <vezeteknev>Kiss</vezeteknev>
+        <keresztnev>Lilla</keresztnev>
+        <becenev>Lili</becenev>
+        <kor>23</kor>
+        <osztondij>46000</osztondij>
+    </student>
+</class>
