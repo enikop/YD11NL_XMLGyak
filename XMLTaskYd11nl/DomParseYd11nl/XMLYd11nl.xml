@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<kutyaiskola>
+
+    <!--Kutyák, akik be vannak regisztrálva-->
+    <kutya kkód="1" gazdi="11" tagság="1000">
+        <név>Bizsu</név>
+        <fajta>yorkshire terrier</fajta>
+        <szül_dátum>2022-10-10</szül_dátum>
+        <nem>kan</nem>
+    </kutya>
+    <kutya kkód="2" gazdi="11" tagság="1002">
+        <név>Buksi</név>
+        <fajta>németjuhász</fajta>
+        <szül_dátum>2021-05-01</szül_dátum>
+        <nem>kan</nem>
+    </kutya>
+    <kutya kkód="3" gazdi="12" tagság="1001">
+        <név>Bella</név>
+        <fajta>magyar vizsla</fajta>
+        <szül_dátum>2023-04-23</szül_dátum>
+        <nem>szuka</nem>
+    </kutya>
+    <kutya kkód="4" gazdi="13" tagság="1003">
+        <név>Mister</név>
+        <fajta>afgán agár</fajta>
+        <szül_dátum>2016-09-15</szül_dátum>
+        <nem>kan</nem>
+    </kutya>
+
+    <!--Kutyák tagság adatai-->
+    <tagság tagkód="1000" aktív="igen">
+        <kezdőnap>2023-03-01</kezdőnap>
+        <tarifa>kedvezményes</tarifa>
+    </tagság>
+    <tagság tagkód="1001">
+        <kezdőnap>2023-10-01</kezdőnap>
+        <tarifa>normál</tarifa>
+    </tagság>
+    <tagság tagkód="1002">
+        <kezdőnap>2022-02-28</kezdőnap>
+        <tarifa>normál</tarifa>
+    </tagság>
+    <tagság tagkód="1003" aktív="nem">
+        <kezdőnap>2022-01-01</kezdőnap>
+        <tarifa>kedvezményes</tarifa>
+    </tagság>
+
+    <!--Gazdik adatai-->
+    <gazdi gkód="11">
+        <név>Kiss Katalin</név>
+        <elérhetőség>
+            <email>kisskat@gmail.com</email>
+            <email>kati@kkconsulting.hu</email>
+            <email>zoltan.kiss@gmail.com</email>
+            <telefon>+36701234987</telefon>
+        </elérhetőség>
+        <szül_év>1980</szül_év>
+    </gazdi>
+    <gazdi gkód="12">
+        <név>Kovács Béláné Folt Irén</név>
+        <elérhetőség>
+            <email>incike@citromail.hu</email>
+            <telefon>+36208877665</telefon>
+        </elérhetőség>
+        <szül_év>1961</szül_év>
+    </gazdi>
+    <gazdi gkód="13">
+        <név>Petőfi Mór</név>
+        <elérhetőség>
+            <email>borok.mortol@gmail.com</email>
+            <email>talprabaradlay@gmail.com</email>
+            <telefon>+36506060768</telefon>
+        </elérhetőség>
+        <szül_év>1972</szül_év>
+    </gazdi>
+
+    <!--Foglalkozások-->
+    <foglalkozás fkód="100" vezető="51">
+        <téma>elsősegély oktatás</téma>
+        <téma>kutyapszichológia előadás</téma>
+        <téma>engedelmesség tréning</téma>
+        <helyszín>gyakorlóaréna</helyszín> 
+        <időpont>
+            <dátum>2023-10-01</dátum>
+            <kezdet>14</kezdet>
+            <vég>18</vég>
+        </időpont>
+    </foglalkozás>
+    <foglalkozás fkód="101" vezető="53">
+        <téma>agility foglalkozás</téma>
+        <téma>activity foglalkozás</téma>
+        <helyszín>akadálypálya</helyszín>
+        <időpont>
+            <dátum>2023-10-08</dátum>
+            <kezdet>15</kezdet>
+            <vég>16</vég>
+        </időpont>
+    </foglalkozás>
+    <foglalkozás fkód="102" vezető="51">
+        <téma>engedelmesség tréning</téma>
+        <helyszín>akadálypálya</helyszín>
+        <időpont>
+            <dátum>2023-10-15</dátum>
+            <kezdet>15</kezdet>
+            <vég>17</vég>
+        </időpont>
+    </foglalkozás>
+    <foglalkozás fkód="103" vezető="51">
+        <téma>engedelmesség tréning</téma>
+         <helyszín>akadálypálya</helyszín>
+        <időpont>
+            <dátum>2023-11-02</dátum>
+            <kezdet>10</kezdet>
+            <vég>12</vég>
+        </időpont>
+    </foglalkozás>
+
+    <!--Kutya-foglalkozás kapcsoló elemek avagy részvételi adatok-->
+    <részvétel kutya="1" foglalkozás="100">
+        <értékelés>4</értékelés>
+    </részvétel>
+    <részvétel kutya="2" foglalkozás="100">
+        <értékelés>5</értékelés>
+        <jutalom>Rágócsont</jutalom>
+    </részvétel>
+    <részvétel kutya="2" foglalkozás="101">
+        <értékelés>5</értékelés>
+        <jutalom>Purina száraz kutyatáp</jutalom>
+    </részvétel>
+    <részvétel kutya="3" foglalkozás="101">
+        <értékelés>2</értékelés>
+        <jutalom>Rágócsont</jutalom>
+    </részvétel>
+    <részvétel kutya="1" foglalkozás="102">
+        <értékelés>5</értékelés>
+        <jutalom>Kislabda</jutalom>
+    </részvétel>
+    <részvétel kutya="2" foglalkozás="102">
+        <értékelés>5</értékelés>
+        <jutalom>Játszókötél</jutalom>
+    </részvétel>
+    <részvétel kutya="1" foglalkozás="103">
+        <értékelés>3</értékelés>
+    </részvétel>
+    <részvétel kutya="2" foglalkozás="103">
+        <értékelés>3</értékelés>
+    </részvétel>
+    <részvétel kutya="3" foglalkozás="103">
+        <értékelés>5</értékelés>
+        <jutalom>Kislabda</jutalom>
+    </részvétel>
+
+    <!--Kutyatrénerek adatai-->
+    <tréner tkód="51">
+        <név>Horváth Zebulon</név>
+        <elérhetőség>
+            <email>horvathz@ebiskola.hu</email>
+            <telefon>06709186254</telefon>
+        </elérhetőség>
+        <szakterület>kutyapszichológia</szakterület>
+        <órabér>3600</órabér>
+    </tréner>
+    <tréner tkód="52">
+        <név>Horváth Indigó</név>
+        <elérhetőség>
+            <email>horvathi@ebiskola.hu</email>
+            <telefon>06704567821</telefon>
+        </elérhetőség>
+        <órabér>2800</órabér>
+    </tréner>
+    <tréner tkód="53">
+        <név>Polgár Annamária</név>
+        <elérhetőség>
+            <email>polgar.annam.2@gmail.com</email>
+            <email>polgara@ebiskola.hu</email>
+            <email>polgara@citromail.hu</email>
+            <telefon>+36700670891</telefon>
+        </elérhetőség>
+        <szakterület>agility</szakterület>
+        <órabér>3250</órabér>
+    </tréner>
+
+</kutyaiskola>
