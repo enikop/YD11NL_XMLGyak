@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>JSON parser</title>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <h3>Órarend</h3>
+        <div id = "data"></div>
+        <div>Válassza ki a feldolgozandó JSON fájlt!</div>
+        <input type="file" accept=".json" id="file-in" >
+
+    </body>
+    <script>
+
+        const dataDiv = document.getElementById("data");
+        const fileInput = document.getElementById("file-in");
+
+        //Böngésző blokkolja same origin policy miatt a lokális fájlbeolvasást, input gomb
+        function handleFileSelect(event) {
+            const file = event.target.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const json = e.target.result;
+                    writeData(json);
+                };
+                reader.readAsText(file);
+            }
+        }
+
+        function writeData(json) {
+            try {
+                dataDiv.innerHTML = "";
+                const obj = JSON.parse(json);
+                const array = obj.YD11NL_orarend.ora;
+                for (let i = 0; i < array.length; i++) {
+                    let child = document.createElement("div")
+                    child.innerHTML = "<span style='color:blue'>Tárgy:</span><span> " + array[i].targy + "</span>";
+                    dataDiv.appendChild(child);
+                    child = document.createElement("div")
+                    child.innerText = "Időpont: " + array[i].idopont.nap + " " + array[i].idopont.tol + "-" + array[i].idopont.ig;
+                    dataDiv.appendChild(child);
+                    child = document.createElement("div")
+                    child.innerText = "Helyszín: " + array[i].helyszin;
+                    dataDiv.appendChild(child);
+                    child = document.createElement("div")
+                    child.innerText = "Oktató: " + array[i].oktato;
+                    dataDiv.appendChild(child);
+                    child = document.createElement("div")
+                    child.innerHTML = "<p style='margin-top:0px;'>Szak: " + array[i].szak + "</p>";
+                    dataDiv.appendChild(child);
+                }
+            } catch (error) {
+                console.log(error)
+                let child = document.createElement("div");
+                child.innerHTML = "<p style='color:red'>Hibás input JSON formátum!</p>";
+                dataDiv.appendChild(child);
+            }
+        }
+
+        let json = '{"YD11NL_orarend":{"ora":[{"targy":"Szoftvertesztelés","oktato":"Dr. Hornyák Olivér","szak":"G3BIW","idopont":{"tol":"10","nap":"hétfő","ig":"12"},"helyszin":"Inf. 103"},{"targy":"Szoftvertesztelés","oktato":"Dr. Hornyák Olivér","szak":"G3BIW","idopont":{"tol":"12","nap":"hétfő","ig":"14"},"helyszin":"Inf. 103"},{"targy":"Web technológiák 1","oktato":"Agárdi Anita","szak":"G3BIW","idopont":{"tol":"14","nap":"hétfő","ig":"16"},"helyszin":"XXX. előadó"},{"targy":"Web technológiák 1","oktato":"Agárdi Anita","szak":"G3BIW","idopont":{"tol":"16","nap":"hétfő","ig":"18"},"helyszin":"Inf. 202"},{"targy":"Mesterséges intelligencia","oktato":"Kunné Dr. Tamás Judit","szak":"G3BIW","idopont":{"tol":"10","nap":"kedd","ig":"12"},"helyszin":"XXXII. előadó"},{"targy":"Adatkezelés XML-ben","oktato":"Dr. Bednarik László","szak":"G3BIW","idopont":{"tol":"12","nap":"kedd","ig":"14"},"helyszin":"XXXII. előadó"},{"targy":"Webes alkalmazások (Java)","oktato":"Selmeci Viktor","szak":"G3BIW","idopont":{"tol":"14","nap":"kedd","ig":"16"},"helyszin":"online"},{"targy":"Webes alkalmazások (Java)","oktato":"Selmeci Viktor","szak":"G3BIW","idopont":{"tol":"16","nap":"kedd","ig":"18"},"helyszin":"online"},{"targy":"Adatkezelés XML-ben","oktato":"Dr. Bednarik László","szak":"G3BIW","idopont":{"tol":"10","nap":"szerda","ig":"12"},"helyszin":"Inf. 101"},{"targy":"Integrált vállalati rendszerek","oktato":"Dr. Samad Dadvandipour","szak":"G3BIW","idopont":{"tol":"12","nap":"szerda","ig":"14"},"helyszin":"X. előadó"},{"targy":"Integrált vállalti rendszerek","oktato":"Kulcsárné Dr. Forrai Mónika","szak":"G3BIW","idopont":{"tol":"14","nap":"szerda","ig":"16"},"helyszin":"Inf. 15"},{"targy":"Mesterséges intelligencia","oktato":"Fazekas Levente","szak":"G3BIW","idopont":{"tol":"10","nap":"csütörtök","ig":"12"},"helyszin":"I. előadó"}]}}';
+        writeData(json);
+
+        fileInput.addEventListener("change", handleFileSelect);
+        
+    </script>
+</html>
